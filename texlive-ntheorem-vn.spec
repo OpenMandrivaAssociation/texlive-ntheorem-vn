@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-ntheorem-vn
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive ntheorem-vn package
 Group:		Publishing
@@ -38,6 +44,7 @@ TeXLive ntheorem-vn package.
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/src/user-interface.tex
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/test.pdf
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/test.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ TeXLive ntheorem-vn package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
