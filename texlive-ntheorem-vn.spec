@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ntheorem-vn.doc.t
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive ntheorem-vn package.
@@ -44,7 +42,6 @@ TeXLive ntheorem-vn package.
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/src/user-interface.tex
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/test.pdf
 %doc %{_texmfdistdir}/doc/latex/ntheorem-vn/test.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,5 +52,3 @@ TeXLive ntheorem-vn package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
