@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ntheorem-vn
 Version:	20111103
-Release:	5
+Release:	6
 Summary:	TeXLive ntheorem-vn package
 Group:		Publishing
 URL:		http://tug.org/texlive
