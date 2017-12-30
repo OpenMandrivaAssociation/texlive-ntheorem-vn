@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-ntheorem-vn
-Version:	20170414
+Version:	1.203
 Release:	1
 Summary:	TeXLive ntheorem-vn package
 Group:		Publishing
